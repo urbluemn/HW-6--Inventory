@@ -8,12 +8,12 @@ namespace InventoryCS
 {
     internal class Product
     {
-        protected string Name;
-        protected string Type;
-        protected int Amount;
-        protected int Price;
+        public string Name { get; private set; }
+        public string Type { get; private set; }
+        public int Amount { get; private set; }
+        public decimal Price { get; private set; }
 
-       public Product(string name, string type, int amount, int price)
+        public Product(string name, string type, int amount, decimal price)
         {
             Name = name;
             Type = type;
